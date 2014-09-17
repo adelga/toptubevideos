@@ -8,6 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Locale;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
@@ -51,7 +52,7 @@ public class RefreshContentsXML {
 	// private static final String CONFIG_PATH = get;
 	public XmlDownloader xmlD;
 	public Context cntx;
-	String[] categorys = Configuration.URLS;
+	String[] categorys ;
 	ArrayList<Category> categorias = new ArrayList<Category>();
 	protected static final int ERROR = 25;
 
@@ -245,6 +246,16 @@ public class RefreshContentsXML {
 		protected Boolean doInBackground(Void... params) {
 			// TODO Auto-generated method stub
 			try {
+				String locale=Locale.getDefault().getLanguage();
+				boolean en=true;
+				if(!locale.contains("en")){
+					en=false;
+				}
+				if(en){
+					categorys= Configuration.URLS_EN;
+
+				}else
+				categorys= Configuration.URLS;
 				// creacion de la categoria favoritos
 				Category favorit = new Category();
 				favorit.tag = "Favorit";
@@ -254,7 +265,10 @@ public class RefreshContentsXML {
 				for (int j = 0; j < categorys.length; j++) {
 					
 					Category category = new Category();
+					if(en)
 					category.tag = Configuration.NAME[j];
+					else
+						category.tag = Configuration.NAME_EN[j];
 					category.type="video";
 					category.icon= "https://photos-3.dropbox.com/t/0/AACBhW1DtuFeaqUF71iwGljeiRwdrlO0OwOT0Z432yNvQw/12/109734988/png/1024x768/3/1407445200/0/2/iconTube.png/zyIfVIeLdLxA0SXRTno-JTiE0MYmbtWMMvlrjnnzvLc";
 					List<Content> listConten = new ArrayList<Content>();

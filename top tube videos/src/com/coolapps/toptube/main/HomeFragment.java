@@ -8,14 +8,6 @@ import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import com.coolapps.toptube.cards.NewsAdapter;
-import com.coolapps.toptube.cards.RowItem;
-import com.coolapps.toptube.flip.FlipViewController;
-import com.coolapps.toptube.main.Main.OnEventSearchListener;
-import com.coolapps.toptube.utils.Category;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
-import com.google.android.gms.ads.mediation.admob.AdMobExtras;
 import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.os.Bundle;
@@ -25,6 +17,15 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.coolapps.toptube.cards.NewsAdapter;
+import com.coolapps.toptube.cards.RowItem;
+import com.coolapps.toptube.flip.FlipViewController;
+import com.coolapps.toptube.main.Main.OnEventSearchListener;
+import com.coolapps.toptube.utils.Category;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.mediation.admob.AdMobExtras;
 
 /*  Fragment para seccion perfil */ 
 @SuppressLint("NewApi")

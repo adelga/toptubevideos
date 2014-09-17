@@ -18,14 +18,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
+import com.coolapps.toptube.R;
 import com.coolapps.toptube.cards.MIMEAdapter;
 import com.coolapps.toptube.cards.RowItem;
 import com.coolapps.toptube.main.Main.OnEventSearchListener;
 import com.coolapps.toptube.utils.Category;
-import com.coolapps.toptube.R;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.mediation.admob.AdMobExtras;
+
 
 @SuppressLint({ "ValidFragment", "NewApi" })
 public class MultimediaFragment extends Fragment implements

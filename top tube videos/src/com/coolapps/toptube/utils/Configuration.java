@@ -40,7 +40,13 @@ public class Configuration {
 			"http://gdata.youtube.com/feeds/api/videos?max-results=50&alt=json&orderby=viewCount&q=music",
 			"http://gdata.youtube.com/feeds/api/videos?max-results=50&alt=json&q=music"
 			};
+	public static String[] URLS_EN = {
+		"http://gdata.youtube.com/feeds/api/videos?max-results=50&alt=json&orderby=published&q=music",
+		"http://gdata.youtube.com/feeds/api/videos?max-results=50&alt=json&orderby=viewCount&q=music",
+		"http://gdata.youtube.com/feeds/api/videos?max-results=50&alt=json&q=music"
+		};
 	public static String[] NAME = { "Recientes", "Más vistos", "Mejor valorados" };
+	public static String[] NAME_EN = { "Recents", "Most viewer", "Most rate" };
 	public static boolean XMLREADER = false;
 	public static String Mainurl = "";
     public static int TIMER_NOTIFICATION=60000 *60*2;

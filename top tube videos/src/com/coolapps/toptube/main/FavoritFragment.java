@@ -27,6 +27,8 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.mediation.admob.AdMobExtras;
 
+
+
 @SuppressLint("NewApi")
 public class FavoritFragment extends Fragment {
 	private List<RowItem> rowItems;
@@ -103,7 +105,7 @@ public class FavoritFragment extends Fragment {
 
 	public void admobIntr(){
 		// Create the interstitial.
-		interstitial = new InterstitialAd(getActivity());
+		interstitial = new com.google.android.gms.ads.InterstitialAd(getActivity());
 		interstitial
 				.setAdUnitId(com.coolapps.toptube.utils.Configuration.ID_ADS_INTERST);
 

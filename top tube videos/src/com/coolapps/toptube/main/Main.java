@@ -33,14 +33,14 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.coolapps.toptube.script.network.UrlImageDownloader;
+import com.coolapps.toptube.R;
 import com.coolapps.toptube.script.network.AbstractImageDownloader.ProgressListener;
+import com.coolapps.toptube.script.network.UrlImageDownloader;
 import com.coolapps.toptube.utils.Category;
 import com.coolapps.toptube.utils.Content;
 import com.coolapps.toptube.utils.DataBase;
 import com.coolapps.toptube.utils.Model;
 import com.coolapps.toptube.utils.RefreshContentsXML;
-import com.coolapps.toptube.R;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
